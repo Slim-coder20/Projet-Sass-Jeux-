@@ -178,3 +178,51 @@ nav {
     }
 
 }
+
+// ############# HEADER // 
+
+header{
+    @include flexCenter; 
+    max-width: 100%;
+    min-height: 100vh;
+    background: no-repeat center/ cover url(../sources/fond.jpg);
+    background-attachment: fixed;
+    padding: 0 1rem;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+}
+
+.header-box{
+    max-width: 800px;
+    width: 100%;
+    color: $light;
+    padding:0 1rem;
+}
+
+.header-img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: calc(25px + 2vw + 10px);
+}
+
+header h1, header p{
+    margin-bottom: 1rem;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 40px; 
+    text-align: center;
+    @include btnStyle; 
+   
+}
+
+header a:hover{
+    @include btnStyleHover; 
+}
