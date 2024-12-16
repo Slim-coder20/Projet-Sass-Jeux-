@@ -37,3 +37,22 @@
     transform: translate(-50%, -50%);
 
 }
+
+@mixin gridBuild {
+
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin: 2rem auto;
+    grid-gap:2rem; 
+    padding: 0 2rem;
+
+}
+
+@mixin lienStyle{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+}
