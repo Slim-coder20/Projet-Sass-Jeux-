@@ -251,9 +251,15 @@ header a:hover {
 
 .container-infos {
   background: #f1f1f1;
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  padding: 2rem 0;
 }
 
-.box-presentation {
+.box-infos-content {
+  margin-top: 2rem;
+}
+
+.box-presentation, .box-infos-content {
   width: 100%;
   height: auto;
   font-size: 18px;
@@ -261,7 +267,12 @@ header a:hover {
   padding: 0 1rem;
 }
 
-.box-presentation h2 {
+.box-infos-content p {
+  color: rgb(21, 17, 14);
+  margin: 1rem 0;
+}
+
+.box-presentation h2, .box-infos-content h2 {
   font-size: calc(20px + 0.5vw + 5px);
   border-left: 3px solid #eca236;
   padding-left: 1rem;
@@ -271,13 +282,13 @@ header a:hover {
   margin: 1rem 0;
 }
 
-.box-presentation-img {
+.box-presentation-img, .box-infos-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.box-presentation a {
+.box-presentation a, .box-infos-content a {
   text-decoration: none;
   font-size: 14px;
   line-height: 40px;
@@ -297,7 +308,7 @@ header a:hover {
   cursor: pointer;
 }
 
-.box-presentation a:hover {
+.box-presentation a, .box-infos-content a:hover {
   background: #eca236;
   color: #f1f1f1;
   box-shadow: 0 0 5px 0 #eca236;

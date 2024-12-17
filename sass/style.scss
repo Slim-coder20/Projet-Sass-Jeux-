@@ -235,10 +235,20 @@ header a:hover{
 }
 
 .container-infos{
-    background:$light; 
+    background:$light;
+    clip-path: polygon(0 5%,100% 0,100% 95%, 0% 100% );
+    padding: 2rem 0;
 }
 
-.box-presentation{
+.box-infos-content{
+    margin-top: 2rem;
+    
+
+}
+
+
+
+.box-presentation,.box-infos-content{
     width: 100%;
     height: auto;
     font-size: 18px;
@@ -247,7 +257,12 @@ header a:hover{
 
 }
 
-.box-presentation h2{
+.box-infos-content p {
+    color: $dark;
+    margin: 1rem 0;
+}
+
+.box-presentation h2,.box-infos-content h2{
     font-size: calc(20px + .5vw + 5px);
     border-left: 3px solid $jaune;
     padding-left: 1rem;
@@ -257,20 +272,20 @@ header a:hover{
     margin: 1rem 0;
 
 }
-.box-presentation-img{
+.box-presentation-img,.box-infos-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.box-presentation a {
+.box-presentation a,.box-infos-content a {
 
     @include lienStyle; 
     @include btnStyle; 
 
 
 }
-.box-presentation a:hover{
+.box-presentation a,.box-infos-content a:hover{
     @include btnStyleHover; 
 }
 
