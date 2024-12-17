@@ -229,9 +229,13 @@ header a:hover{
 
 // #################### SECTION 1 // 
 
-.presentation {
+.presentation, .infos {
     @include gridBuild; 
     padding: 0 1rem;
+}
+
+.container-infos{
+    background:$light; 
 }
 
 .box-presentation{
@@ -326,4 +330,6 @@ header a:hover{
     height: 15%;
     @include flexCenter; 
 }
+
+// ############# SECTION INFO content  // 
 
